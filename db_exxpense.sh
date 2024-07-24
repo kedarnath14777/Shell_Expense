@@ -19,12 +19,15 @@ else
 fi 
 
 exit_status(){
+
     if [ $1 -eq 0 ]
     then 
      echo "installed successfully.. $2"
     else
     echo "not installed.. $2"
     exit 1 # exit manually 
+    fi 
+
 }
 
 dnf install mysql-server -y
