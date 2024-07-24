@@ -18,13 +18,15 @@ else
  exit 1 # exit manually 
 fi 
 
+echo "$R hello $N world $N"
+
 exit_status(){
 
     if [ $1 -eq 0 ]
     then 
-     echo -e "$G installed successfully.. $2 $N"
+     echo -e " $G installed successfully.. $2 $N "
     else
-    echo " $R not installed.. $2 $N"
+    echo -e " $R not installed.. $2 $N"
     exit 1 # exit manually 
     fi 
 
