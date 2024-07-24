@@ -8,7 +8,7 @@ LL=/tmp/$SRIPT_NAME-$TIME_STAMP.log
 R=\e[31m
 G=\e[32m
 Y=\e[33m
-N=\e[0+m
+N=\e[0m
 #check user is sudo or not 
 if [ $USER_ID -eq 0 ]
 then 
