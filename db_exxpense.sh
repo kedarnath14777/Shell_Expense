@@ -22,9 +22,9 @@ exit_status(){
 
     if [ $1 -eq 0 ]
     then 
-     echo "installed successfully.. $2"
+     echo -e "$G installed successfully.. $2 $N"
     else
-    echo "not installed.. $2"
+    echo " $R not installed.. $2 $N"
     exit 1 # exit manually 
     fi 
 
