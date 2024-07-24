@@ -5,10 +5,10 @@ USER_ID=$(id -u )
 TIME_STAMP=$(date +%F-%H-%M-%S )
 SRIPT_NAME=$( echo $0 | cut -d "." -f1 )
 LL=/tmp/$SRIPT_NAME-$TIME_STAMP.log
-R=\e[31m
-G=\e[32m
-Y=\e[33m
-N=\e[0m
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
 #check user is sudo or not 
 if [ $USER_ID -eq 0 ]
 then 
@@ -18,7 +18,7 @@ else
  exit 1 # exit manually 
 fi 
 
-echo -e " $R hello  world $N "
+echo -e " ...$R hello  world ...$N "
 
 exit_status(){
 
