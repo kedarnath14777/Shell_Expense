@@ -18,7 +18,7 @@ else
  exit 1 # exit manually 
 fi 
 
-echo -e "$R hello $N world $N"
+echo -e " $R hello  world $N "
 
 exit_status(){
 
