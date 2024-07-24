@@ -32,6 +32,26 @@ exit_status(){
 
 }
 
-dnf install mysql-server -y
-exit_status $? "mysql server"
+dnf install mysql-server -y &>> $LL
+exit_status $? "mysql serverd"
+
+systemctl enable mysqld &>> $LL
+exit_status $? "enable mysqld"
+
+systemctl start mysqld &>> $LL
+exit_status $? "start  mysqld"
+
+#check the db password setuped or not 
+
+
+mysql -h 54.157.161.195 -u root -p ExpenseApp@1 -e "show databases" &>> LL
+if [ $? -eq 0 ]
+then
+echo -e  " $G root password is already setuped .. Skippiing $N "
+else
+mysql_secure_installation --set-root-pass ExpenseApp@1
+exit_status $? "password setup" 
+fi 
+
+
 
