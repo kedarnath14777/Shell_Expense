@@ -1,8 +1,8 @@
 #!/bin/bash
 
-Array :[ "docker", "git", "ansible", "k8s" ]
+Array1=[ "docker", "git", "ansible", "k8s" ]
 
 for i in $Array
 do 
-  echo "couses are ::" $i
+  echo "couses are ::" $[i]
 done 
