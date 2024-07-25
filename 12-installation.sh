@@ -16,7 +16,7 @@ echo "now you can install"
 
 dnf install nginx -y 
 echo "exit statsus is nginx is :: $? " 
-if [ $? -eq 0]
+if [ $? -nq 0]
 then 
     echo "installed successfully"
 else
