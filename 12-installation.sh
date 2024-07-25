@@ -15,12 +15,11 @@ fi
 echo "now you can install"
 
 dnf install nginx -y 
-if [ $? -nq 0]
+if [ $? -eq 0]
 then 
-    echo "Installed successfully "
+    echo "installed successfully"
 else
     echo "not installed "
-    exit 1 
+    exit 1 # manullay exit 
 fi 
-
-
+echo "still proceding" 
