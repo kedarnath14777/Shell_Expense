@@ -3,13 +3,9 @@
 UU=$(id -u )
 
 valid_package(){
-    if [ $1 -eq 0 ]
-    then 
-         echo " installed successfully $2"
-    else
-        echo " not installed $2"
-        exit 1 # manually exit 
-    }
+    echo "exist status is :: $1"
+    echo "whats is :: $2"
+}
 
 if [ $UU -eq 0 ]
 then 
