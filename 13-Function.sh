@@ -9,8 +9,8 @@ valid_package(){
     else
         echo " not installed $2"
         exit 1 # manually exit 
+        }
 
-}
 if [ $UU -eq 0 ]
 then 
     echo "super user"
