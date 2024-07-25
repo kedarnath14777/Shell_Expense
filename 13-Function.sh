@@ -22,5 +22,11 @@ else
     exit 1 # exit manually 
 fi 
 
-dnf install maven  -y 
-valid_package $? "maven"
+# dnf install maven  -y 
+# valid_package $? "maven"
+
+dnf install git -y 
+valid_package $? "git"
+
+dnf install tree -y 
+valid_package $? "tree"
