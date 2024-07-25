@@ -11,7 +11,7 @@ valid_package(){
      else
         echo " not installed ::$2" 
         exit 1 # manually exxiting 
-}
+ }
 
 if [ $UU -eq 0 ]
 then 
@@ -22,4 +22,4 @@ else
 fi 
 
 dnf install maven  -y 
-valid_package $? "maven "
+valid_package $? "maven"
