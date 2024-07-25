@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo "number "
-read -p num 
+read -s  num 
 
 for i in num 
 do 
- echo $i 
+  echo "num is :"  $i 
 done 
