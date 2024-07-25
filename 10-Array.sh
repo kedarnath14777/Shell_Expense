@@ -1,8 +1,10 @@
 #!/bin/bash
 
-Array1=[ "docker", "git", "ansible", "k8s" ]
+Array1=("Ansible","git","docker","Kubernetes")
 
-for i in $Array
+echo "print course 1 is ::"$Array1[0]
+
+for i in $Array1
 do 
   echo "couses are ::" $[i]
 done 
