@@ -3,7 +3,7 @@
 echo "enter the number "
 num=$1
 
-if[ "$num" -gt 18 ]
+if[ $num -gt 18 ]
 then 
  echo " eligible for voting"
  echo "Age is ::" $num 
