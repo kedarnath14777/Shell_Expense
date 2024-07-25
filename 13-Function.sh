@@ -11,6 +11,7 @@ valid_package(){
      else
         echo " not installed ::$2" 
         exit 1 # manually exxiting 
+    fi 
  }
 
 if [ $UU -eq 0 ]
