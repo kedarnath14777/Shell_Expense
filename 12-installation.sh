@@ -22,4 +22,12 @@ else
     echo "not installed "
     exit 1 # manullay exit 
 fi 
-echo "still proceding" 
+
+dnf install mysql -y 
+if [ $? -eq 0 ]
+then 
+    echo "installed successfully"
+else
+    echo "not installed "
+    exit 1 # manullay exit 
+fi 
