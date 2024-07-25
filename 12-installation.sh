@@ -17,10 +17,9 @@ echo "now you can install"
 dnf install nginx -y 
 if [ $? -ne 0 ]
 then 
- echo "not installed "
-    
-else
     echo "installed successfully"
+else
+    echo "not installed "
     exit 1 # manullay exit 
 fi 
 echo "still proceding" 
