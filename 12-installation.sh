@@ -14,7 +14,7 @@ fi
 
 echo "now you can install"
 
-dnf install nginx -y 
+dnf install nginx1 -y 
 if [ $? -eq 0]
 then
     echo "installed successfully"
