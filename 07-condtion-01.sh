@@ -5,8 +5,9 @@ read -s num
 echo " the number " $num
 
 if[ $num -gt 18 ]
- echo " eligible for voting"
- echo "Age is ::" $num 
+then 
+  echo " eligible for voting"
+  echo "Age is ::" $num 
 else 
- echo " not eligible for voting"
+   echo " not eligible for voting"
 fi 
