@@ -12,5 +12,14 @@ else
     exit 1 
 fi 
 
-echo "no you can install"
+echo "now you can install"
+
+dnf install nginx -y 
+if [ $? -eq 0]
+then
+    echo "installed successfully"
+else 
+    echo " not installed "
+    exit 1
+fi 
 
