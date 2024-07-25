@@ -35,10 +35,10 @@ exit_status(){
 dnf install mysql-server -y &>> $LL
 exit_status $? "mysql serverd"
 
-dnf systemctl enable mysqld &>> $LL
+systemctl enable mysqld &>> $LL
 exit_status $? "enable mysqld"
 
-dnf systemctl start mysqld &>> $LL
+systemctl start mysqld &>> $LL
 exit_status $? "start  mysqld"
 
 #check the db password setuped or not 
