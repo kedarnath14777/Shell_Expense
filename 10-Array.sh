@@ -1,7 +1,7 @@
 #!/bin/bash
 
-Array1=("Ansible","git","docker","Kubernetes")
+courses=("Ansible","git","docker","Kubernetes")
 
-echo "${Array1[0]}"
+echo "1st course is ${courses[0]}"
 
 
