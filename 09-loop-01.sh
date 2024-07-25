@@ -1,9 +1,8 @@
 #!/bin/bash
 
-echo "number "
-read -s  num 
+courses:$@ 
 
-for num  in $num 
+for i  in $@ 
 do 
-  echo "num is :"  $i 
+  echo "couses:: " $i 
 done 
