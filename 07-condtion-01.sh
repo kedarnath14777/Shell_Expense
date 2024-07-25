@@ -1,7 +1,8 @@
 #!/bin/bash
 
 echo "enter the number "
-num=$1
+read -p num
+echo " the number " $num
 
 if[ $num -gt 18 ]
 then 
