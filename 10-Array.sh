@@ -3,6 +3,6 @@
 Array1=("Ansible","git","docker","Kubernetes")
 
 
-echo "print course 1 is :: ${Array1[0]}"
+echo "print course 1 is :: ${Array1[$0]}"
 
 
