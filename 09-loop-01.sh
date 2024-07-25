@@ -3,7 +3,7 @@
 echo "number "
 read -s  num 
 
-for i in num 
+for num  in $num 
 do 
   echo "num is :"  $i 
 done 
