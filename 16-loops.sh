@@ -32,7 +32,7 @@ valid_1(){
 
 for i in $@
 do 
-echo "all packages is $@"
+echo "all packages is $i"
 dnf list installed $i &>> l_file
     if [ $? -eq 0 ]
       then 
