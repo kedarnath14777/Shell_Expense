@@ -29,9 +29,9 @@ package(){
     fi 
 }
 
-dnf insatll git -y 
+dnf install  git -y 
 package $? "git"
-dnf insatll maven -y 
+dnf install maven -y 
 package $? "maven"
-dnf insatll tree -y 
+dnf install tree -y 
 package $? "tree"
