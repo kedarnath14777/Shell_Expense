@@ -29,6 +29,10 @@ valid_1(){
     fi 
 
 }
+for j in $@
+do 
+echo "packages is $j"
+done 
 
 for i in $@
 do 
