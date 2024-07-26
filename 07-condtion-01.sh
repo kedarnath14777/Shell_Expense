@@ -11,3 +11,10 @@ then
 else 
     echo " not eligible for voting"
 fi 
+
+# -eq # Equal
+# -ne # Not equal
+# -lt # Less than
+# -le # Less than or equal
+# -gt # Greater than
+# -ge # Greater than or equal
