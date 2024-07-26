@@ -1,7 +1,8 @@
 #!/bin/bash
 
-u=$(id -u )
-if [ $id -eq 0 ]
+us=$(id -u )
+
+if [ $us -eq 0 ]
 then
     echo -e " $G super user $N "
 else 
