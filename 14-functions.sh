@@ -34,11 +34,11 @@ valid(){
 
 
 
-dnf install maven  -y &>> s_c
+dnf install maven  -y &>> $s_c
 valid $? "maven"
 
-dnf install git -y &>> s_c
+dnf install git -y &>> $s_c
 valid $? "git"
 
-dnf install tree -y &>> s_c
+dnf install tree -y &>> $s_c
 valid  $? "tree"
