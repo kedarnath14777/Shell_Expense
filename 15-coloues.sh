@@ -29,9 +29,9 @@ package(){
     fi 
 }
 
-dnf install  git -y 
+dnf install  git -y &>> $l_file
 package $? "git"
-dnf install maven -y 
+dnf install maven -y  >> $l_file
 package $? "maven"
-dnf install tree -y 
+dnf install tree -y >> $l_file
 package $? "tree"
